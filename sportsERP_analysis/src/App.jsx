@@ -1,10 +1,10 @@
 import './App.css'
-
+import NavBar from './components/NavBar'
 function App() {
 
   return (
     <>
-     <h1 className='h1 text-danger'>Main Application using ReactJs</h1>
+     <NavBar></NavBar>
     </>
   )
 }
