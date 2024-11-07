@@ -60,7 +60,7 @@ const ConditionMonitoring = () => {
 
   // Generate degradation data dynamically from the degradation object
   const degradationData = Object.keys(conditionData.degradation).map((key) => {
-    const transition = key.replace(/([a-z])([A-Z])/g, "$1 to $2"); // Format transition like "Good to Normal"
+    const transition = key.replace(/([a-z])([A-Z])/g, "$1 $2"); // Format transition like "Good to Normal"
     return { transition, count: conditionData.degradation[key] };
   });
 
