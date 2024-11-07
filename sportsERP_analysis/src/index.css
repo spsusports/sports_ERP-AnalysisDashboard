@@ -1,0 +1,16 @@
+:root {
+  font-family: Inter, Helvetica, Arial;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #0d0d0dde;
+  background-color: #ebebeb;
+}
+
+.backgound-color {
+  background-color: #ebebeb;
+}
+
+.border-gray {
+  border-color: rgb(133, 133, 133);
+}
