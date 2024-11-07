@@ -18,7 +18,7 @@ const StateCard = ({ icon, value, label, icolor = 'warning' }) => {
 
 StateCard.propTypes = {
   icon: PropTypes.string.isRequired, // updated to accept string
-  value: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
   icolor: PropTypes.string,
 };
