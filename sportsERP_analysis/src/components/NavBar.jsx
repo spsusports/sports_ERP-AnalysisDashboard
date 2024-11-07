@@ -8,20 +8,14 @@ export default function NavBar() {
     <>
       <Navbar className="shadow-sm">
         <div className="container-fluid">
-          <Navbar.Brand href="#home" className="d-flex justify-content-between w-100 align-item-center">
+          <Navbar.Brand href="#home" className="d-flex justify-content-between w-100 align-items-center">
             <img
               alt=""
               src={logo}
               height="45"
               className="d-inline-block align-top"
             />
-            <h3 className="text-primary m-1 p-0">SPORTS ERP ANALYTICS DASHBOARD</h3>
-            <img
-              alt=""
-              src={jklogo}
-              height="45"
-              className="d-inline-block align-top"
-            />
+            <h3 className="text-primary m-0 p-0"><span className="text-black">Welcome,</span> Admin!!</h3>
           </Navbar.Brand>
         </div>
       </Navbar>
