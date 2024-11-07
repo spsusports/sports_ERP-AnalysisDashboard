@@ -1,8 +1,8 @@
 import React from "react";
 import RequestTrendAnalysis from "../analysis/RequestTrendAnalysis";
+import DelayedReturnPieChart from "../analysis/DelayedReturnPieChart";
 
 function Analysis4() {
-
   return (
     <>
       <div className="d-flex gap-2">
@@ -10,9 +10,35 @@ function Analysis4() {
           <h5 className="h5 pb-2 border-bottom border-2 border-info">
             Predicted Analysis
           </h5>
-          <div className="container-fluid d-flex flex-column rounded border border-gary p-2 px-3">
-            <h5 className="h5 m-0 mb-2">Request Trends OverTime</h5>
-            <RequestTrendAnalysis></RequestTrendAnalysis>
+          <div className="d-flex">
+            <div className="d-flex justify-content-between w-100">
+              <div>
+                <div className="card shadow-sm">
+                  <div className="card-header bg-primary text-white">
+                    <h5 className="card-title mb-0">Request Trends OverTime</h5>
+                  </div>
+                  <div className="card-body">
+                    <RequestTrendAnalysis></RequestTrendAnalysis>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                {/* Return Time Compliance */}
+                <div>
+                  <div className="card shadow-sm">
+                    <div className="card-header bg-primary text-white">
+                      <h5 className="card-title mb-0">
+                        Return Time Compliance
+                      </h5>
+                    </div>
+                    <div className="card-body">
+                      <DelayedReturnPieChart />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

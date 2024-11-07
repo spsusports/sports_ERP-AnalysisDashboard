@@ -150,7 +150,8 @@ const RequestTrendAnalysis = () => {
           dataMatrix={plotData}
           graphTitle=""
           yAxisLabel="Request Count"
-          width={550}
+          width={610}
+          height={370}
         />
       ) : (
         <p>Loading data...</p>
