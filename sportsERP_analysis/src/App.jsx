@@ -5,6 +5,7 @@ import { signInWithPopup } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
 import NavBar from './components/NavBar';
 import StateHolder from './components/StateHolder';
+import logo from './assets/spsulogo.png';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -71,8 +72,9 @@ function App() {
       ) : (
         <div className="login-popup">
           <div className="login-container">
-            <h2>Please Log in with Google</h2>
-            <button className="google-login-btn" onClick={handleLoginWithGoogle}>
+            <img src={logo} height='45' className='mb-2'></img>
+            <h2 className='h4 mb-2'>Admin Login</h2>
+            <button className="btn btn-primary" onClick={handleLoginWithGoogle}>
               Sign in with Google
             </button>
           </div>
