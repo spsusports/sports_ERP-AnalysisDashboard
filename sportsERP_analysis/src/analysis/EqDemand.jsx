@@ -112,11 +112,6 @@ const EqDemand = () => {
           graphTitle=""
           yAxisLabel="Request Count"
           width={1180}
-          legendColors={{
-            Football: "orange",
-            Cricket: "red",
-            Basketball: "blue",
-          }}
         />
       )}
     </div>
