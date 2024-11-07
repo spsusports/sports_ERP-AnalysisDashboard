@@ -5,6 +5,7 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 import BarPlot from "./BarPlot"; // Import the BarPlot component
 import { db } from "./../firebaseConfig";
 import Student2d from "./Student2d";
+import EqDemand from "../analysis/EqDemand";
 
 function Analysis1() {
   const [topUsers, setTopUsers] = useState([]);
@@ -41,6 +42,7 @@ function Analysis1() {
           General Analysis
         </h5>
         <div className="container-fluid d-flex flex-column rounded border border-gary p-2 px-3">
+          {/* top 7 student with most request analysis 4 */}
           <div>
             <h6 className="h6 my-2">Top 7 Students Which has Most Requests</h6>
             <div className="d-flex align-items-end">
