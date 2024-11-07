@@ -7,7 +7,7 @@ function AnalysisNavBar() {
     <>
       <div
         className="d-flex flex-column rounded bg-light p-3 shadow-sm"
-        style={{ width: "250px" }}
+        style={{ width: "250px", height: "100%" }}
       >
         <h5 className="h5 text-center">Analysis Menu</h5>
         <ul className="nav flex-column gap-2 mt-2">

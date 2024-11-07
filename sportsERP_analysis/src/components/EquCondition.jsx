@@ -1,4 +1,5 @@
 import React from "react";
+import ConditionMonitoring from "../analysis/ConditionMonitoring";
 
 export default function EquCondition() {
 
@@ -10,6 +11,7 @@ export default function EquCondition() {
             Equipment Condition Monitoring
           </h5>
           <div className="container-fluid d-flex flex-column rounded border border-gary p-2 px-3">
+            <ConditionMonitoring></ConditionMonitoring>
           </div>
         </div>
       </div>
