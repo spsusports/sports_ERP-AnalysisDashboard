@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const StateCard = ({ icon, value, label, icolor = 'warning' }) => {
   return (
-    <div className="card d-flex flex-row align-items-center p-3 shadow-sm border-0 rounded-3 justify-content-around" style={{ minWidth: '220px', maxWidth: '250px', background: 'linear-gradient(90deg, rgba(245, 246, 252, 1) 0%, rgba(255, 255, 255, 1) 100%)' }}>
+    <div className="card d-flex flex-row align-items-center p-3 shadow-sm border-0 rounded-3 justify-content-around" style={{ minWidth: '210px', maxWidth: '250px', background: 'linear-gradient(90deg, rgba(245, 246, 252, 1) 0%, rgba(255, 255, 255, 1) 100%)' }}>
       <div className="me-3 p-2 bg-light shadow-sm rounded d-flex justify-content-center align-items-center" style={{ width: '50px', height: '50px' }}>
         <i className={`bi ${icon} text-${icolor}`} style={{ fontSize: '30px' }}></i>
       </div>

@@ -28,7 +28,7 @@ function AnalysisNavBar() {
           </li>
           <li className="nav-item p-1 bg-secondary bg-opacity-25 rounded">
             <Link to="/analysis4" className="nav-link text-dark">
-              <i className="bi bi-pie-chart me-2"></i>Analysis 4
+              <i className="bi bi-pie-chart me-2"></i>Predicted
             </Link>
           </li>
         </ul>

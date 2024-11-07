@@ -95,7 +95,7 @@ export default function StateHolder() {
   }, []);
 
   return (
-    <div className='d-flex flex-wrap w-auto gap-4'>
+    <div className='d-flex flex-wrap w-auto justify-content-between'>
       <StateCard icon='bi-people' icolor='success' value={totalUsers} label='Total Users' />
       <StateCard icon='bi-box-seam' value={totalInventory} label='Total Inventory' />
       <StateCard icon='bi-check2-circle' icolor='success' value={workingInventory} label='Working Inventory' />

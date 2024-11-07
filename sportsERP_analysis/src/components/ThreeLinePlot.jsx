@@ -18,13 +18,21 @@ const ThreeLinePlot = ({ dataMatrix, graphTitle, xAxisLabel, yAxisLabel, lineCol
         <Legend />
         
         {/* First Line */}
-        <Line name={`${graphTitle} - Line 1`} type="monotone" dataKey="y1" stroke={lineColors[0]} strokeWidth={2} dot={true} />
+        <Line name={`${graphTitle} Acctual`} type="monotone" dataKey="y1" stroke={lineColors[0]} strokeWidth={2} dot={true} />
         
         {/* Second Line */}
-        <Line name={`${graphTitle} - Line 2`} type="monotone" dataKey="y2" stroke={lineColors[1]} strokeWidth={2} dot={true} />
+        <Line name={`${graphTitle} Moving Avg`} type="monotone" dataKey="y2" stroke={lineColors[1]} strokeWidth={2} dot={true} />
         
-        {/* Third Line - Dotted */}
-        <Line name={`${graphTitle} - Line 3`} type="dotted" dataKey="y3" stroke={lineColors[2]} strokeWidth={2} dot={true} />
+        {/* Third Line - Dotted (Regression) */}
+        <Line 
+          name={`${graphTitle} Predicted`} 
+          type="monotone" 
+          dataKey="y3" 
+          stroke={lineColors[2]} 
+          strokeWidth={2} 
+          dot={false} 
+          strokeDasharray="10 10" // This makes the line dashed
+        />
       </LineChart>
     </ResponsiveContainer>
   );
