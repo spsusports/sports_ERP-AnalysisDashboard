@@ -4,9 +4,9 @@ function GoBackButton() {
   const navigate = useNavigate();
 
   return (
-    <li className="nav-item p-1 bg-secondary bg-opacity-25 rounded">
+    <li className="nav-item p-1 bg-secondary bg-opacity-75 rounded">
       <span
-        className="nav-link text-dark"
+        className="nav-link text-light"
         onClick={() => navigate(-1)} // Goes back one step in the history stack
         style={{ cursor: 'pointer' }}
       >

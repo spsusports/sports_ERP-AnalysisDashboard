@@ -12,8 +12,8 @@ function AnalysisNavBar() {
       >
         <h5 className="h5 text-center">Analysis Menu</h5>
         <ul className="nav flex-column gap-2 mt-2">
-          <li className="nav-item p-1 bg-secondary bg-opacity-25 rounded">
-            <Link to="https://sportserp-admin.spsu.ac.in/admin" className="nav-link text-dark">
+          <li className="nav-item p-1 bg-primary rounded">
+            <Link to="https://sportserp-admin.spsu.ac.in/admin" className="nav-link text-light">
               <i className="bi bi-house me-2"></i>Go Home
             </Link>
           </li>
