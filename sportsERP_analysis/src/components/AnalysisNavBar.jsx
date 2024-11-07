@@ -22,8 +22,8 @@ function AnalysisNavBar() {
             </Link>
           </li>
           <li className="nav-item p-1 bg-secondary bg-opacity-25 rounded">
-            <Link to="/analysis3" className="nav-link text-dark">
-              <i className="bi bi-bar-chart me-2"></i>Analysis 3
+            <Link to="/EquCondition" className="nav-link text-dark">
+              <i className="bi bi-bar-chart me-2"></i>Item Monitoring
             </Link>
           </li>
           <li className="nav-item p-1 bg-secondary bg-opacity-25 rounded">

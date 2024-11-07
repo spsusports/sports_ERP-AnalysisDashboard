@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GeneralAnalysis from "./GeneralAnalysis";
 import SportsDemands from "./SportsDemands";
-import Analysis3 from "./Analysis3";
+import EquCondition from "./EquCondition";
 import Analysis4 from "./Analysis4";
 import AnalysisNavBar from "./AnalysisNavBar";
 
@@ -16,7 +16,7 @@ function GraphPanel() {
             <Routes>
               <Route path="/GeneralAnalysis" element={<GeneralAnalysis />} />
               <Route path="/SportsDemands" element={<SportsDemands />} />
-              <Route path="/analysis3" element={<Analysis3 />} />
+              <Route path="/EquCondition" element={<EquCondition />} />
               <Route path="/analysis4" element={<Analysis4 />} />
             </Routes>
           </div>
