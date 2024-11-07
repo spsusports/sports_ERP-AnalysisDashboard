@@ -6,6 +6,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import NavBar from './components/NavBar';
 import StateHolder from './components/StateHolder';
 import logo from './assets/spsulogo.png';
+import GraphPanel from './components/GraphPanel';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -64,6 +65,7 @@ function App() {
             <NavBar />
             <div className="container-fluid p-3">
               <StateHolder />
+              <GraphPanel />
             </div>
           </div>
         ) : (
