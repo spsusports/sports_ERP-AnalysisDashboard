@@ -20,7 +20,7 @@ const PieChartComponent = ({ dataMatrix, graphTitle, legendColors = [] }) => {
   }
 
   return (
-    <ResponsiveContainer width={500} height={300}>
+    <ResponsiveContainer width={500} height={344}>
       <PieChart>
         <Pie
           data={filteredData}
