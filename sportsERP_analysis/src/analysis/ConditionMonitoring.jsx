@@ -66,51 +66,65 @@ const ConditionMonitoring = () => {
 
   return (
     <div className="d-flex w-100">
-      <div className="d-flex flex-column">
-        <h5>Condition Monitoring Analysis</h5>
-        <ResponsiveContainer width={600} height={400}>
-          <BarChart
-            data={chartData}
-            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="condition" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
+      <div className="d-flex w-100 justify-content-between gap-3">
+        <div>
+          <div className="card shadow-sm">
+            <div className="card-header bg-primary text-white">
+              <h5 className="card-title mb-0">Condition Monitoring Analysis</h5>
+            </div>
+            <div className="card-body">
+              <ResponsiveContainer width={630} height={370}>
+                <BarChart
+                  data={chartData}
+                  margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="condition" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
 
-            {/* Bars for Issued and Returned Items */}
-            <Bar dataKey="issued" fill="#8884d8" name="Issued" />
-            <Bar dataKey="returned" fill="#82ca9d" name="Returned" />
+                  {/* Bars for Issued and Returned Items */}
+                  <Bar dataKey="issued" fill="#8884d8" name="Issued" />
+                  <Bar dataKey="returned" fill="#82ca9d" name="Returned" />
 
-            {/* Line for Tracking Trends (e.g., total returned items) */}
-            <Line
-              type="monotone"
-              dataKey="returned"
-              stroke="#ff7300"
-              name="Return Trend"
-            />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
-      <div className="d-flex flex-column">
-        {/* Degradation Chart */}
-        <h5>Degradation Transitions</h5>
-        <ResponsiveContainer width={550} height={400}>
-          <BarChart
-            data={degradationData}
-            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="transition" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
+                  {/* Line for Tracking Trends (e.g., total returned items) */}
+                  <Line
+                    type="monotone"
+                    dataKey="returned"
+                    stroke="#ff7300"
+                    name="Return Trend"
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
 
-            {/* Bars for Degradation Transitions */}
-            <Bar dataKey="count" fill="#ff7300" name="Degradation" />
-          </BarChart>
-        </ResponsiveContainer>
+        <div>
+          <div className="card shadow-sm">
+            <div className="card-header bg-primary text-white">
+              <h5 className="card-title mb-0">Degradation Transitions</h5>
+            </div>
+            <div className="card-body">
+              <ResponsiveContainer width={500} height={370}>
+                <BarChart
+                  data={degradationData}
+                  margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="transition" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+
+                  {/* Bars for Degradation Transitions */}
+                  <Bar dataKey="count" fill="#ff7300" name="Degradation" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
