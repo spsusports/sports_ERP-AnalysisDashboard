@@ -10,9 +10,9 @@ function GraphPanel() {
   return (
     <>
       <Router>
-        <div className="d-flex mt-3 gap-3">
+        <div className="d-flex mt-3 gap-3 ">
           <AnalysisNavBar></AnalysisNavBar>
-          <div className="bg-light rounded shadow-sm p-3">
+          <div className="bg-light rounded shadow-sm p-3 border border-gray w-100">
             <Routes>
               <Route path="/analysis1" element={<Analysis1 />} />
               <Route path="/analysis2" element={<Analysis2 />} />

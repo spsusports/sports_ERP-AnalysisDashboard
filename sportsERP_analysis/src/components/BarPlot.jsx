@@ -11,8 +11,8 @@ const BarPlot = ({ dataMatrix, graphTitle, xAxisLabel, yAxisLabel, legendColor, 
         <CartesianGrid strokeDasharray="3 3" />
         
         {/* X and Y Axis Labels */}
-        <XAxis dataKey="x" label={{ value: xAxisLabel, position: 'insideBottomRight', offset: -5 }} />
-        <YAxis label={{ value: yAxisLabel, angle: -90, position: 'insideLeft', offset: 10 }} />
+        <XAxis dataKey="x" label={{ value: xAxisLabel, position: 'insideBottomRight', offset: 0 }} />
+        <YAxis label={{ value: yAxisLabel, angle: -90, position: 'insideLeft', offset: 20 }} />
         
         <Tooltip />
         <Legend />

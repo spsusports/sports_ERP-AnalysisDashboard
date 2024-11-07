@@ -63,7 +63,7 @@ function App() {
         isAdmin ? (
           <div>
             <NavBar />
-            <div className="container-fluid p-3">
+            <div className="container-fluid p-3 backgound-color">
               <StateHolder />
               <GraphPanel />
             </div>
