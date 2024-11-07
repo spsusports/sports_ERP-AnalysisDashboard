@@ -1,4 +1,4 @@
-// Analysis1.js
+// GeneralAnalysis.js
 
 import React, { useEffect, useState } from "react";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
@@ -7,7 +7,7 @@ import { db } from "./../firebaseConfig";
 import Student2d from "./Student2d";
 import DelayedReturnPieChart from "../analysis/DelayedReturnPieChart";
 
-function Analysis1() {
+function GeneralAnalysis() {
   const [topUsers, setTopUsers] = useState([]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function Analysis1() {
   return (
     <div className="container">
       <h5 className="h5 pb-2 border-bottom border-2 border-info">
-          Demand Analysis for Sports and Equipment 
+          General Analysis
         </h5>
       
       <div className="row">
@@ -78,4 +78,4 @@ function Analysis1() {
   );
 }
 
-export default Analysis1;
+export default GeneralAnalysis;
